@@ -2,21 +2,125 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Main</title>
-
+    <title>
+        Main
+    </title>
     <link rel="stylesheet" href="main.css">
-
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "main"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+        "flow": {
+            "prototype": "montage/ui/flow.reel",
+            "properties": {
+                "element": {"#": "flow"},
+                "cameraFov": 50,
+                "cameraPosition": [
+                    0,
+                    0,
+                    1500
+                ],
+                "cameraTargetPoint": [
+                    0,
+                    0,
+                    0
+                ],
+                "flowEditorMetadata": {
+                    "flowEditorVersion": 0.1,
+                    "shapes": [
+                        {
+                            "type": "FlowSpline",
+                            "name": "Spline 1",
+                            "pathIndex": 0
+                        }
+                    ]
+                },
+                "hasSelectedIndexScrolling": false,
+                "isSelectionEnabled": false,
+                "linearScrollingVector": [
+                    -300,
+                    0
+                ],
+                "paths": [
+                    {
+                        "knots": [
+                            {
+                                "previousHandlerPosition": [],
+                                "nextDensity": 10,
+                                "previousDensity": 10,
+                                "knotPosition": [
+                                    -2216.1290322580644,
+                                    58.158319870759215,
+                                    745.709052061077
+                                ],
+                                "rotateX": 0,
+                                "rotateY": 0,
+                                "rotateZ": 0,
+                                "opacity": 1,
+                                "nextHandlerPosition": [
+                                    -54.8387096774195,
+                                    -135.65584449424182,
+                                    -727.6350513314915
+                                ]
+                            },
+                            {
+                                "knotPosition": [
+                                    2583.8709677419356,
+                                    -77.54442649434577,
+                                    1162.5103444681852
+                                ],
+                                "nextHandlerPosition": [],
+                                "previousHandlerPosition": [
+                                    983.8709677419356,
+                                    -77.54442649434577,
+                                    1162.5103444681852
+                                ],
+                                "nextDensity": 10,
+                                "previousDensity": 10,
+                                "rotateX": 0,
+                                "rotateY": 0,
+                                "rotateZ": 0,
+                                "opacity": 1
+                            }
+                        ],
+                        "units": {
+                            "rotateX": "",
+                            "rotateY": "",
+                            "rotateZ": "",
+                            "opacity": ""
+                        },
+                        "headOffset": 0,
+                        "tailOffset": 0
+                    }
+                ],
+                "scrollingTransitionDuration": 500,
+                "scrollingTransitionTimingFunction": "ease",
+                "scrollVectorX": true,
+                "scrollVectorY": true,
+                "selectedIndexScrollingOffset": 0
+            }
+        },
+        "image": {
+            "prototype": "digit/ui/image.reel",
+            "properties": {
+                "element": {"#": "image"},
+                "crossOrigin": null,
+                "src": "http://images.playfrance.com/news/64941/zoom/0297.jpg",
+                "width": "400"
             }
         }
+    }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main"></div>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
+
+        </div>
+        <img data-montage-id="image">
+    </div>
 </body>
 </html>
